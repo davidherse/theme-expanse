@@ -7,12 +7,12 @@ function goBack(e) {
   var pathname = document.location.pathname;
 
   var hostRegex = [/localhost/, /192.168/, /10.28/, /davidherse/];
-  var pathNameRegex = [/\//, /\/tag\//];
+  var pathNameRegex = [/\/tag\//];
 
   var historyBack = false;
 
   for (var i = 0; i < hostRegex.length; i++) {
-    if(hostRegex[i].test(referrer)) {
+    if(hostRegex[i].test(referrer) || historyBack) {
       historyBack = true;
       break;
     }
@@ -24,6 +24,8 @@ function goBack(e) {
       break;
     }
   }
+
+  historyBack = (pathname === '/') ? false : historyBack;
 
   if(historyBack) {
     e.preventDefault();

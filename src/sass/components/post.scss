@@ -29,3 +29,30 @@
   margin: $x-3 0;
   display: block;
 }
+
+.post__tag {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 10px;
+  margin: 0;
+  padding: 0;
+
+  a {
+    border-radius: $x-3;
+    font-size: $x-3;
+    display: inline-block;
+    background-color: $colour-post-meta;
+    color: white;
+    padding: $x-1 $x-3;
+  }
+
+  a:hover {
+    background-color: $colour-nav-hover;
+  }
+}
+
+.post__tags {
+  list-style-type: none;
+  padding: $x-6 0 0 0;
+  margin-bottom: $x-6;
+}

@@ -3,7 +3,7 @@
 var addEventListener = document.addEventListener ? 'addEventListener' : 'attachEvent';
 var events = {
   click: (document.addEventListener ? 'click' : 'onclick')
-}
+};
 
 function callbackWrap(callback) {
   return function(event) {
@@ -13,7 +13,7 @@ function callbackWrap(callback) {
     }
 
     return callback(event);
-  }
+  };
 }
 
 function preventDefault() {
@@ -22,4 +22,4 @@ function preventDefault() {
 
 module.exports = function(node, event, callback) {
   node[addEventListener](events[event], callbackWrap(callback), false);
-}
+};

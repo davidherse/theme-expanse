@@ -2,6 +2,7 @@
 <html prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>
       {% if is_login %}Login
@@ -47,25 +48,27 @@
     {{ login_form }}
 
     {% else %}
-    <header class="header">
+    <div class="header">
       <div class="header__wrap">
         <div class="header__content">
           <h1><a href="{{ site.base_url }}">{{ site.name }}</a></h1>
           <p class="header__description"><a href="{{ site.base_url }}">{{ site.description }}</a></p>
         </div>
         {% if pages %}
-        <nav class="header__nav">
-          <a class="nav__item" {% if is_home %}class="active"{% endif %} href="{{ site.base_url }}">Blog</a>
-            {% for page in pages %}
-          <a class="nav__item" href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a>
-            {% endfor %}
-        </nav>
+        <div class="header__nav">
+          <nav>
+            <a class="nav__item" {% if is_home %}class="active"{% endif %} href="{{ site.base_url }}">Blog</a>
+              {% for page in pages %}
+            <a class="nav__item" href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a>
+              {% endfor %}
+          </nav>
+        </div>
         {% endif %}
       </div>
       <a href="{{ site.base_url }}">
         <img src="{% if dev %}/images/banner@x2.gif {% else %} {{ assets('images/banner@x2.gif ') }} {% endif %}" class="header__logo"/>
       </a>
-    </header>
+    </div>
 
     <div class="content">
       <div class="posts">
@@ -83,7 +86,7 @@
             <div class="post__content">
               {{ post.content }}
             </div>
-            <a class="post__author" href="{{ site.base_url }}">
+            <a class="post__author" href="/about">
               {% if post.author %}
               <img class="author__avatar" src="{{ post.author.avatar }}" />
               {% endif %}
@@ -122,12 +125,12 @@
         {% if post.tags %}
         <ul class="post__tags">
         {% for tag in post.tags %}
-          <li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+          <li class="post__tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
         {% endfor %}
         </ul>
         {% endif %}
         <div class="post__footer">
-          <a class="post__author" href="{{ site.base_url }}">
+          <a class="post__author" href="/about">
             {% if post.author %}
             <img class="author__avatar" src="{{ post.author.avatar }}" />
             {% endif %}
@@ -141,7 +144,7 @@
         </div>
 
         <div class="pagination">
-          <a href="" class="prev" data-back="true">&laquo; Back To List</a>
+          <a href="/" class="prev" data-back="true">&laquo; Back To List</a>
         </div>
 
         {% if site.disqus %}
@@ -168,7 +171,7 @@
           {{ page.content }}
         </div>
         <div class="pagination">
-          <a href="" class="prev" data-back="true">&laquo; Back To List</a>
+          <a href="/" class="prev" data-back="true">&laquo; Back To List</a>
         </div>
 
       {% endif %}
