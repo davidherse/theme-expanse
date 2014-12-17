@@ -1,0 +1,31 @@
+.post--list {
+  @extend %rule-bottom;
+  margin-bottom: $x-9;
+  padding-bottom: $x-9;
+}
+
+.author__avatar {
+  width: $x-13;
+  height: $x-13;
+  display: block;
+  float: left;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.author__details {
+  font-size: 16px;
+  margin: 4px $x-4;
+  display: inline-block;
+  font-weight: 300;
+}
+
+.post__date {
+  color: $colour-post-meta;
+  display: block;
+}
+
+.post__author {
+  margin: $x-3 0;
+  display: block;
+}

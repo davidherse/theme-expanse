@@ -1,0 +1,46 @@
+.header {
+  padding-left: $x-31;
+  padding-right: $x-15;
+  margin-bottom: $x-31;
+}
+
+.header__wrap {
+  @extend %table;
+  position: relative;
+  height: $x-43;
+  z-index: 2;
+}
+
+.header__description {
+  @extend %hx;
+  font-size: $x-6;
+  line-height: 1.166666666em;
+}
+
+.header__content {
+  @extend %table-cell;
+}
+
+.header__nav {
+  @extend %table-cell;
+  text-align: right;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 110px;
+}
+
+a.nav__item {
+  margin-left: $x-2;
+  font-size: $x-4;
+  padding-bottom: $x-1;
+  color: $colour-nav;
+  font-weight: 300;
+  &:hover, &.active {
+    color: $colour-nav-hover;
+    border-bottom: 2px solid $colour-nav-hover;
+  }
+}

@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: white;
+  color: black;
+  font-family: lato,helvetica,arial,sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: $colour-nav;
+}
+
+a, img {
+  border: none;
+  outline: none;
+}
+
+a:hover {
+  color: $colour-nav-hover;
+}
+
+a:focus {
+  color: $colour-nav-hover;
+}
+
+h1 {
+  font-size: $x-6;
+  @extend %hx;
+  color: $colour-h1;
+  a {
+    color: #404041;
+  }
+}
+
+h2 {
+  font-size: $x-12;
+  padding-bottom: $x-6;
+  @extend %hx;
+}
+
+h3 {
+  font-size: $x-12;
+  padding-bottom: $x-6;
+  @extend %hx;
+}
+
+h4 {
+  font-size: $x-4;
+  padding-bottom: $x-5;
+  @extend %hx;
+}
+
+button {
+  cursor: pointer;
+}
+
+fieldset {
+  padding: $x-2 0;
+}
+
+table {
+  text-align: left;
+  border-collapse: collapse;
+}
+
+p {
+  font-size: $x-4;
+  color: $colour-p;
+  padding-bottom: $x-3;
+}

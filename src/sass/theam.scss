@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./modules/type";
+@import "./modules/layout";
+
+//reset
+@import "./reset";
+
+//components
+@import "components/header";
+@import "components/content";
+@import "components/post";
+@import "components/pagination";
+@import "components/footer";

@@ -1,0 +1,11 @@
+%hx {
+  font-weight: 100;
+  color: $colour-hx;
+  text-rendering: optimizeLegibility;
+  a {
+    color: $colour-hx;
+    &:hover {
+      color: $colour-nav-hover;
+    }
+  }
+}

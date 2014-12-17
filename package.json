@@ -1,12 +1,55 @@
 {
-  "name": "theme-expanse",
-  "description": "The official repository for Postach.io's default theme, Expanse. Fork this to use it as a boilerplate.",
+  "name": "theme-clean",
+  "description": "David Herse' Postach.io's theam",
   "devDependencies": {
+    "browserify": "^7.0.2",
+    "express-liquid": "^0.2.6",
     "gulp": "~3.8.7",
-    "gulp-concat": "~2.3.4",
-    "gulp-less": "~1.3.3",
-    "path": "~0.4.9",
+    "gulp-autoprefixer": "^2.0.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-jshint": "^1.9.0",
+    "gulp-less": "^2.0.1",
+    "gulp-livereload": "^2.1.1",
+    "gulp-minify-css": "^0.3.11",
     "gulp-rename": "~1.2.0",
-    "gulp-uglify": "~0.3.1"
+    "gulp-sass": "^1.2.4",
+    "gulp-uglify": "^1.0.2",
+    "gulp-util": "^3.0.1",
+    "jshint-stylish": "^1.0.0",
+    "path": "~0.4.9",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0"
+  },
+  "dependencies": {
+    "bluebird": "^2.3.11",
+    "compression": "^1.2.2",
+    "express": "^4.10.4",
+    "liquid-node": "^2.4.0",
+    "morgan": "^1.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "jshintConfig": {
+    "lookup": false,
+    "globalstrict": true,
+    "globals": {
+      "require": true,
+      "module": true,
+      "process": true,
+      "jest": true,
+      "describe": true,
+      "beforeEach": true,
+      "it": true,
+      "expect": true,
+      "spyOn": true,
+      "document": true,
+      "window": true,
+      "jasmine": true,
+      "setTimeout": true,
+      "setInterval": true,
+      "console": true,
+      "global": true
+    }
   }
 }
