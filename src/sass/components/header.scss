@@ -44,3 +44,15 @@ a.nav__item {
     border-bottom: 2px solid $colour-nav-hover;
   }
 }
+
+@media (max-width: 400px) {
+  .header {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+  .header {
+    margin-bottom: $x-22;
+  }
+}
