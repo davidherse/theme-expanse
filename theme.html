@@ -52,6 +52,11 @@
       <div class="header__wrap">
         <div class="header__content">
           <h1><a href="{{ site.base_url }}">{{ site.name }}</a></h1>
+          {% if site.bio %}
+            <p class="header__description">
+              <a href="{{ site.base_url }}">{{ site.bio }}</a>
+            </p>
+          {% endif %}
         </div>
         {% if pages %}
         <div class="header__nav">

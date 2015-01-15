@@ -13,7 +13,7 @@
 
 .header__description {
   @extend %hx;
-  font-size: $x-6;
+  font-size: $x-4;
   line-height: 1.166666666em;
 }
 
@@ -49,10 +49,18 @@ a.nav__item {
   .header {
     margin-bottom: 0px;
   }
+
+  .header__description {
+    display: none;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
   .header {
     margin-bottom: $x-22;
+  }
+
+  .header__description {
+    font-size: $x-3;
   }
 }

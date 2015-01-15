@@ -28,7 +28,7 @@ var post = {
 
 var site = {
   name: 'David Herse',
-  bio: 'bio',
+  bio: 'The control experiement',
   description: 'The control experiement'
 }
 
