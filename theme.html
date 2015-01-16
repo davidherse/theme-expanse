@@ -161,7 +161,8 @@
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-      {% elif is_page %}
+        {{ post.type }}
+      {% elif post.type == 'page' %}
 
         <h2>{{ page.title }}</h2>
         <div class="post__content">
