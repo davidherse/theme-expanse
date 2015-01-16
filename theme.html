@@ -86,7 +86,7 @@
             <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
             <div class="post__content">
               {{ post.content|truncate(1000) }}
-              <a href="{{ post.permalink }}" class="pagination__next">Full Post &raquo;</a>
+              <a href="{{ post.permalink }}" class="post__link">Full Post &raquo;</a>
             </div>
             <a class="post__author" href="/about">
               {% if post.author %}

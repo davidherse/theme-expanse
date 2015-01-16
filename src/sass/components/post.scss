@@ -63,3 +63,8 @@
 .post__content div {
   @extend %p;
 }
+
+.post__link {
+  font-size: $x-4;
+  font-weight: 300;
+}
