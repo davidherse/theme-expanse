@@ -23,7 +23,8 @@ var post = {
   content: '<p>UX designer. Front-end developer. Lead ui/ux at everydayhero.com. User driven. Data driven. Better UX within the Agile methodology.</p><p><a href="#">Linked In</a></p>',
   created_at: '20th Dec 2014',
   author: author,
-  tags: ['foo', 'bar']
+  tags: ['foo', 'bar'],
+  type: 'post'
 }
 
 var site = {

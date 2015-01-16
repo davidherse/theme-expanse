@@ -1,7 +1,10 @@
-.post--list {
+.post {
   @extend %rule-bottom;
-  margin-bottom: $x-9;
-  padding-bottom: $x-9;
+  padding-bottom: $x-4;
+}
+
+.post--list, .artical {
+  padding-bottom: $x-4;
 }
 
 .author__avatar {

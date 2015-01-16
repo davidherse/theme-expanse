@@ -1,7 +1,7 @@
 .header {
   padding-left: $x-31;
   padding-right: $x-9;
-  margin-bottom: $x-31;
+  margin-bottom: $x-9;
 }
 
 .header__wrap {
@@ -57,7 +57,7 @@ a.nav__item {
 
 @media (min-width: 401px) and (max-width: 600px) {
   .header {
-    margin-bottom: $x-22;
+    margin-bottom: $x-7;
   }
 
   .header__description {

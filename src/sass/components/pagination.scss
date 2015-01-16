@@ -1,7 +1,14 @@
 .pagination {
-  margin-top: $x-6;
+  margin-bottom: $x-1;
+  padding-bottom: $x-6;
+  @extend %rule-bottom;
 }
 
 .pagination__next {
   margin-left: $x-6;
+}
+
+.pagination__prev, .pagination__next {
+  font-size: $x-4;
+  font-weight: 300;
 }
