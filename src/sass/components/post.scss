@@ -1,10 +1,9 @@
 .post, .post--list {
-  @extend %rule-bottom;
-  padding-bottom: $x-4;
-}
-
-.post--list {
-  margin-bottom: $x-4;
+  border: 0px;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: $colour-rule;
+  margin-bottom: $x-16;
 }
 
 .author__avatar {
@@ -60,11 +59,17 @@
   margin-bottom: $x-4;
 }
 
-.post__content div {
-  @extend %p;
+.post__content {
+  @extend %rule-bottom;
+  padding-bottom: $x-4;
+  div {
+    @extend %p;
+  }
 }
 
 .post__link {
   font-size: $x-4;
   font-weight: 300;
+  margin-top: $x-4;
+  display: block;
 }

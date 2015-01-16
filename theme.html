@@ -86,8 +86,8 @@
             <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
             <div class="post__content">
               {{ post.content|truncate(1000) }}
-              <a href="{{ post.permalink }}" class="post__link">Post &raquo;</a>
             </div>
+            <a href="{{ post.permalink }}" class="post__link">Full Post &raquo;</a>
             <a class="post__author" href="/about">
               {% if post.author %}
               <img class="author__avatar" src="{{ post.author.avatar }}" />
@@ -102,7 +102,7 @@
           </div>
           {% endfor %}
 
-        {% if not is_tag %}
+        {% if !is_tag %}
           {% if pagination.next or pagination.prev %}
           <div class="pagination">
             {% if pagination.prev %}<a href="{{ pagination.prev }}" class="pagination__prev">&laquo; Previous</a>{% endif %}
