@@ -3,22 +3,18 @@
   padding-bottom: $x-4;
 }
 
-.post--list, .artical {
-  padding-bottom: $x-4;
-}
-
 .author__avatar {
-  width: $x-13;
-  height: $x-13;
+  width: $x-12;
+  height: $x-12;
   display: block;
   float: left;
-  border-radius: 50%;
+  border-radius: 3px;
   overflow: hidden;
 }
 
 .author__details {
   font-size: 16px;
-  margin: 4px $x-4;
+  margin: 4px $x-3;
   display: inline-block;
   font-weight: 300;
 }
@@ -29,7 +25,7 @@
 }
 
 .post__author {
-  margin: $x-3 0;
+  margin: $x-4 0;
   display: block;
 }
 
@@ -56,8 +52,8 @@
 
 .post__tags {
   list-style-type: none;
-  padding: $x-6 0 0 0;
-  margin-bottom: $x-6;
+  padding: $x-4 0 0 0;
+  margin-bottom: $x-4;
 }
 
 .post__content div{
