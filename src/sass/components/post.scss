@@ -1,12 +1,13 @@
 .post, .post--list {
   border: 0px;
-  border-bottom: 2px;
-  border-style: solid;
-  border-color: $colour-rule;
+  @extend %rule-bottom;
 }
 
 .post--list {
   margin-bottom: $x-16;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: $colour-rule;
 }
 
 .author__avatar {

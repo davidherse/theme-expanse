@@ -2,6 +2,9 @@
   margin-bottom: $x-16;
   padding-bottom: $x-4;
   @extend %rule-bottom;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: $colour-rule;
 }
 
 .pagination__next {
