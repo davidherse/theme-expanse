@@ -86,9 +86,7 @@
             <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
             <div class="post__content">
               {{ post.content|truncate(1000) }}
-              {% if post.content|wordcount > 100 %}
-                <a href="{{ post.permalink }}">more</a>
-              {% endif %}
+              <a href="{{ post.permalink }}">Go to post &raquo;</a>
             </div>
             <a class="post__author" href="/about">
               {% if post.author %}
