@@ -36,7 +36,7 @@ var site = {
 var templateMocks = {
   is_login: false,
   is_tag: false,
-  is_home: false,
+  is_home: true,
   dev: true,
   post: post,
   posts: [post, post],

@@ -1,6 +1,10 @@
-.post {
+.post, .post--list {
   @extend %rule-bottom;
   padding-bottom: $x-4;
+}
+
+.post--list {
+  margin-bottom: $x-4;
 }
 
 .author__avatar {
@@ -56,6 +60,6 @@
   margin-bottom: $x-4;
 }
 
-.post__content div{
+.post__content div {
   @extend %p;
 }
