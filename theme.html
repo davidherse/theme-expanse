@@ -102,7 +102,7 @@
           </div>
           {% endfor %}
 
-        {% if !is_tag %}
+        {% if not is_tag %}
           {% if pagination.next or pagination.prev %}
           <div class="pagination">
             {% if pagination.prev %}<a href="{{ pagination.prev }}" class="pagination__prev">&laquo; Previous</a>{% endif %}
