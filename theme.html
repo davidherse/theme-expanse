@@ -123,14 +123,14 @@
               <p class="share__link"><i class="icon-share"></i> <a href="{{ link.url }}">{{ link.url }}</a></p>
               {% endif %}
             </div>
-          </div>
           {% if post.tags %}
-          <ul class="post__tags">
-          {% for tag in post.tags %}
-            <li class="post__tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
-          {% endfor %}
-          </ul>
+            <ul class="post__tags">
+            {% for tag in post.tags %}
+              <li class="post__tag"><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+            {% endfor %}
+            </ul>
           {% endif %}
+          </div>
           <div class="post__footer">
             <a class="post__author" href="/about">
               {% if post.author %}
