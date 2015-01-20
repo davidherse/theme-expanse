@@ -59,13 +59,10 @@
 
 .post__tags {
   list-style-type: none;
-  padding: $x-4 0 0 0;
   margin-bottom: $x-4;
 }
 
 .post__content {
-  @extend %rule-bottom;
-  padding-bottom: $x-4;
   div {
     @extend %p;
   }
@@ -74,4 +71,8 @@
 .post__link {
   font-size: $x-4;
   font-weight: 300;
+}
+
+.post__footer {
+  @extend %rule-top;
 }

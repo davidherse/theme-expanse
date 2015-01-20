@@ -20,7 +20,7 @@ var author = {
 }
 var post = {
   title: 'About',
-  content: '<p>UX designer. Front-end developer. Lead ui/ux at everydayhero.com. User driven. Data driven. Better UX within the Agile methodology.</p><p><a href="#">Linked In</a></p>',
+  content: '<p>UX designer. Front-end developer. Lead ui/ux at everydayhero.com. User driven. Data driven. Better UX within the Agile methodology.</p><p><a href="#">Linked In</a></p><blockquote>"Agile fits in quite well with quality UX, as long as it is included in the development cycle correctly."</blockquote><p>UX designer. Front-end developer. Lead ui/ux at everydayhero.com. User driven. Data driven. Better UX within the Agile methodology.</p><p><a href="#">Linked In</a></p>',
   created_at: '20th Dec 2014',
   author: author,
   tags: ['foo', 'bar'],
@@ -36,7 +36,7 @@ var site = {
 var templateMocks = {
   is_login: false,
   is_tag: false,
-  is_home: true,
+  is_home: false,
   dev: true,
   post: post,
   posts: [post, post],
