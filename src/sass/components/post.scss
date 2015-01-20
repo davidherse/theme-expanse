@@ -63,6 +63,8 @@
 }
 
 .post__content {
+  font-size: $x-4;
+
   div {
     @extend %p;
   }
