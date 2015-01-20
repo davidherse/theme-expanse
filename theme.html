@@ -61,16 +61,16 @@
         {% if pages %}
         <div class="header__nav">
           <nav>
-            <a class="nav__item" {% if is_home %}class="active"{% endif %} href="{{ site.base_url }}">Blog</a>
+            <a class="nav__item{% if is_home %} active{% endif %}" href="{{ site.base_url }}">Blog</a>
               {% for page in pages %}
-            <a class="nav__item" href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a>
+            <a class="nav__item {{ set_active(page.permalink) }}" href="{{ page.permalink }}">{{ page.title }}</a>
               {% endfor %}
           </nav>
         </div>
         {% endif %}
       </div>
       <a href="{{ site.base_url }}">
-        <img src="{% if dev %}/images/banner@x2.gif {% else %} {{ assets('images/banner@x2.gif ') }} {% endif %}" class="header__logo"/>
+        <img src="{% if dev %}/images/banner@x2.gif {% else %} {{ assets('images/banner@x2.gif ') }} {% endif %}" class="header__logo" alt=""/>
       </a>
     </div>
 
@@ -90,7 +90,7 @@
             </div>
             <a class="post__author" href="/about">
               {% if post.author %}
-              <img class="author__avatar" src="{{ post.author.avatar }}" />
+              <img class="author__avatar" src="{{ post.author.avatar }}" alt=""/>
               {% endif %}
               <span class="author__details">
                 {% if post.author %}
@@ -129,7 +129,7 @@
           <div class="post__footer">
             <a class="post__author" href="/about">
               {% if post.author %}
-              <img class="author__avatar" src="{{ post.author.avatar }}" />
+              <img class="author__avatar" src="{{ post.author.avatar }}" alt=""/>
               {% endif %}
               <span class="author__details">
                 {% if post.author %}
