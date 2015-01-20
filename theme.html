@@ -81,8 +81,8 @@
         {% endif %}
 
         {% if posts %}
-          {% for post in posts %}
           <div class="post--list">
+          {% for post in posts %}
             <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
             <div class="post__content">
               {{ post.content|truncate(500) }}
@@ -99,8 +99,8 @@
                 <span class="post__date">Posted on <time datetime="{{post.created_at}}">{{ post.created_at|format_date }}</time></span>
               </span>
             </a>
-          </div>
           {% endfor %}
+          </div>
 
         {% if not is_tag %}
           {% if pagination.next or pagination.prev %}
