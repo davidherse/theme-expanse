@@ -39,8 +39,11 @@ a.nav__item {
   padding-bottom: $x-1;
   color: $colour-nav;
   font-weight: 300;
+  padding-bottom: 2px;
+  display: inline-block;
   &:hover, &.active {
     color: $colour-nav-hover;
+    padding-bottom: 0px;
     border-bottom: 2px solid $colour-nav-hover;
   }
 }
@@ -52,6 +55,10 @@ a.nav__item {
 
   .header__description {
     display: none;
+  }
+
+  a.nav__item {
+    margin-bottom: 2px;
   }
 }
 
