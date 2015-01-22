@@ -55,6 +55,7 @@ h3 {
 h4 {
   @extend %p;
   font-weight: bold;
+  margin-top: $x-6;
 }
 
 button {
