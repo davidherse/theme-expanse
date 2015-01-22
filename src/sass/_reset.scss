@@ -47,14 +47,14 @@ h2 {
 }
 
 h3 {
-  @extend %p;
-  font-weight: bold;
+  font-size: $x-12;
+  padding-bottom: $x-6;
+  @extend %hx;
 }
 
 h4 {
-  font-size: $x-4;
-  padding-bottom: $x-5;
-  @extend %hx;
+  @extend %p;
+  font-weight: bold;
 }
 
 button {
