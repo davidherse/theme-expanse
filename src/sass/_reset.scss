@@ -47,9 +47,8 @@ h2 {
 }
 
 h3 {
-  font-size: $x-12;
-  padding-bottom: $x-6;
-  @extend %hx;
+  @extend %p;
+  font-weight: bold;
 }
 
 h4 {
