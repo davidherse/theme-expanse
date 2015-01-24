@@ -85,8 +85,9 @@
           {% for post in posts %}
             <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
             <div class="post__content">
-              {{ post.content|striptags|truncate(500) }}
-              <a href="{{ post.permalink }}" class="post__link">More &raquo;</a>
+              <p>{{ post.content|striptags|truncate(500) }}
+                <a href="{{ post.permalink }}" class="post__link">More &raquo;</a>
+              </p>
             </div>
             <a class="post__author" href="/about">
               {% if post.author %}
