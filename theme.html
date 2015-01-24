@@ -189,5 +189,11 @@
 
     <!-- js -->
     <script src="{% if dev %} /js/application.js {% else %} {{ assets('js/application.js') }} {% endif %}"></script>
+    {% if dev %}{% else %}
+      <script src="http://guarded-sierra-9487.herokuapp.com/snippet.js"></script>
+      <script>
+        UO('create', 'davidherse');
+      </script>
+    {% endif %}
   </body>
 </html>
