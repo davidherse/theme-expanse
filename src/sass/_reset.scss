@@ -58,6 +58,11 @@ h4 {
   margin-top: $x-6;
 }
 
+h5 {
+  @extend %p;
+  font-weight: 400;
+}
+
 button {
   cursor: pointer;
 }
