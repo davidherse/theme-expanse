@@ -61,6 +61,7 @@ h4 {
 h5 {
   @extend %p;
   font-weight: 400;
+  padding-bottom: $x-1;
 }
 
 button {
