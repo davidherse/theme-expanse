@@ -83,23 +83,25 @@
         {% if posts %}
           <div class="post--list">
           {% for post in posts %}
-            <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
-            <div class="post__content">
-              <p>{{ post.content|striptags|truncate(500) }}
-                <a href="{{ post.permalink }}" class="post__link">More &raquo;</a>
-              </p>
-            </div>
-            <a class="post__author" href="/about">
-              {% if post.author %}
-              <img class="author__avatar" src="{{ post.author.avatar }}" alt=""/>
-              {% endif %}
-              <span class="author__details">
+            <div class="post__snippet">
+              <h3><a href="{{ post.permalink }}">{{ post.title }}</a></h3>
+              <div class="post__content">
+                <p>{{ post.content|striptags|truncate(500) }}
+                  <a href="{{ post.permalink }}" class="post__link">More &raquo;</a>
+                </p>
+              </div>
+              <a class="post__author" href="/about">
                 {% if post.author %}
-                <span class="author__name">{{ post.author.name }}</span>
+                <img class="author__avatar" src="{{ post.author.avatar }}" alt=""/>
                 {% endif %}
-                <span class="post__date">Posted on <time datetime="{{post.created_at}}">{{ post.created_at|format_date }}</time></span>
-              </span>
-            </a>
+                <span class="author__details">
+                  {% if post.author %}
+                  <span class="author__name">{{ post.author.name }}</span>
+                  {% endif %}
+                  <span class="post__date">Posted on <time datetime="{{post.created_at}}">{{ post.created_at|format_date }}</time></span>
+                </span>
+              </a>
+            </div>
           {% endfor %}
           </div>
 

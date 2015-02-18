@@ -81,6 +81,10 @@ p {
   @extend %p;
 }
 
+ul {
+  margin: 0 0 $x-5 $x-5;
+}
+
 blockquote {
   font-size: $x-6;
   font-weight: 300;
