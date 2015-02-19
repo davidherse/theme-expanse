@@ -19,6 +19,7 @@
 
 .header__content {
   @extend %table-cell;
+  padding-top: 20px;
 }
 
 .header__nav {
@@ -60,6 +61,9 @@ a.nav__item {
   a.nav__item {
     margin-bottom: 2px;
   }
+  .header__content {
+    padding-top: 0px;
+  }
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
@@ -69,5 +73,9 @@ a.nav__item {
 
   .header__description {
     font-size: $x-3;
+  }
+
+  .header__content {
+    padding-top: 29px;
   }
 }
